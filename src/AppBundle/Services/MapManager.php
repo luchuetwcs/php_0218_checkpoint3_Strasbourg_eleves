@@ -34,4 +34,9 @@ class MapManager
             return false;
         }
     }
+
+    public function getRandomIsland(){
+        $islands = $this->em->getRepository('AppBundle:Tile')->findby(array('type'=>'island'));
+        return $islands[array_rand($islands,1)];
+    }
 }
