@@ -28,11 +28,15 @@ class BoatController extends Controller
         $em = $this->getDoctrine()->getManager();
         $boat = $this->getBoat();
 
-        $boat->setCoordX($x);
-        $boat->setCoordY($y);
+
 
         $em->flush();
         if ($mapManager->tileExists($x,$y)){
+            $boat->setCoordX($x);
+            $boat->setCoordY($y);
+        }
+        else{
+
             $this->addFlash('error','wrong way man!');
         }
 
