@@ -30,6 +30,9 @@ class BoatController extends Controller
         if ($mapManager->tileExist($x,$y)){
             $boat->setCoordX($x);
             $boat->setCoordY($y);
+            if ($mapManager->checkTreasure($x,$y)){
+                $this->addFlash('succes', 'Howdy Mate! We found the treasure of Rackham The Red!');
+            }
         }
         else{
             $this->addFlash('error', 'Are you crazy Mate!, This is uncharted sea, the Kraken might roam there.');
@@ -69,6 +72,9 @@ class BoatController extends Controller
 
             $boat->setCoordX($x);
             $boat->setCoordY($y);
+            if ($mapManager->checkTreasure($x,$y)){
+                $this->addFlash('succes', 'Howdy Mate! We found the treasure of Rackham The Red!');
+            }
         }
         else{
             $this->addFlash('error', 'Are you crazy Mate!, This is uncharted sea, the Kraken might roam there.');

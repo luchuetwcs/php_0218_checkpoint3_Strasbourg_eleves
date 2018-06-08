@@ -51,7 +51,7 @@ class Tile
     /**
      * @var bool
      *
-     * @ORM\Column(name="hasTraesure", type="boolean", length=255, options={"default" : 0})
+     * @ORM\Column(name="hasTreasure", type="boolean", length=255, options={"default" : 0})
      */
     private $hasTreasure;
 

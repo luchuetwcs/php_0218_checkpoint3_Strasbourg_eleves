@@ -39,4 +39,15 @@ class MapManager
         $islands = $this->em->getRepository('AppBundle:Tile')->findby(array('type'=>'island'));
         return $islands[array_rand($islands,1)];
     }
+
+    public function checkTreasure($x,$y){
+
+        $tile = $this->em->getRepository('AppBundle:Tile')->findby(array('coordX'=>$x, 'coordY'=>$y));
+        if($tile[0]->getHasTreasure()==1){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
