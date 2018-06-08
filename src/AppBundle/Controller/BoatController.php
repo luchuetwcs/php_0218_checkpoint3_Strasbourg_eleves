@@ -36,6 +36,115 @@ class BoatController extends Controller
     }
 
     /**
+     * Move the boat to North
+     * @Route("/moveNorth/{y}", name="moveNorth", requirements={"y"="\d+"}))
+     */
+    public function moveNorth(int $y)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $boat = $this->getBoat();
+
+        $boat->setCoordY($y -1);
+
+        $em->flush();
+
+        return $this->redirectToRoute('map');
+    }
+
+    /**
+     * Move the boat to East
+     * @Route("/moveEast/{x}", name="moveEast", requirements={"x"="\d+"}))
+     */
+    public function moveEast(int $x)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $boat = $this->getBoat();
+
+        $boat->setCoordX($x + 1);
+
+        $em->flush();
+
+        return $this->redirectToRoute('map');
+    }
+
+    /**
+     * Move the boat to South
+     * @Route("/moveSouth/{y}", name="moveSouth", requirements={"y"="\d+"}))
+     */
+    public function moveSouth(int $y)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $boat = $this->getBoat();
+
+        $boat->setCoordY($y + 1);
+
+        $em->flush();
+
+        return $this->redirectToRoute('map');
+    }
+
+    /**
+     * Move the boat to West
+     * @Route("/moveWest/{x}", name="moveWest", requirements={"x"="\d+"}))
+     */
+    public function moveWest(int $x)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $boat = $this->getBoat();
+
+        $boat->setCoordX($x - 1);
+
+        $em->flush();
+
+        return $this->redirectToRoute('map');
+    }
+
+
+    /**
+     * Move the boat to N, E, S, W
+     * @Route("/Direction/{x}/{y}", name="moveDirection", requirements={"x"="\d+", "y"="\d+"}))
+     */
+    public function moveDirection(int $directionX, int $directionY, int $x, int $y)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $boat = $this->getBoat();
+        $north = 0;
+        $east = 0;
+        $west = 0;
+        $south = 0;
+
+        if ($directionX < 0) {
+            $boat->setCoordX($x + 1);
+            $west = 1;
+        }elseif ($directionX > 0) {
+            $boat->setCoordX($x - 1);
+            $east = 1;
+        }else{
+            $boat->setCoordX($x);
+        }
+
+        if ($directionY < 0) {
+            $boat->setCoordY($y + 1);
+            $south = 1;
+        }elseif ($directionY > 0) {
+            $boat->setCoordY($y - 1);
+            $north = 1;
+        }else{
+            $boat->setCoordY($y);
+        }
+
+        $em->flush();
+
+        return $this->render('map/index.html.twig', array(
+            'north' => $north,
+            'east' => $east,
+            'west' => $west,
+            'south' => $south,
+        ));
+    }
+
+
+    /**
      * Lists all boat entities.
      *
      * @Route("/", name="boat_index")
