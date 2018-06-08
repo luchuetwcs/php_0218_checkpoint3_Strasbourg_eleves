@@ -8,6 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
+use AppBundle\Services\MapManager;
 
 /**
  * Boat controller.
@@ -24,15 +25,25 @@ class BoatController extends Controller
      */
     public function moveBoatAction(int $x, int $y)
     {
-        $em = $this->getDoctrine()->getManager();
-        $boat = $this->getBoat();
+        $mapManager = new MapManager();
+        if ($mapManager->tileExists($x, $y)) {
+            $em = $this->getDoctrine()->getManager();
+            $boat = $this->getBoat();
 
-        $boat->setCoordX($x);
-        $boat->setCoordY($y);
+            $boat->setCoordX($x);
+            $boat->setCoordY($y);
 
-        $em->flush();
+            $em->flush();
 
-        return $this->redirectToRoute('map');
+            return $this->redirectToRoute('map');
+        } else {
+            $this->addFlash(
+                'error',
+                'Coordonnées inexistantes'
+            );
+
+            return $this->redirectToRoute('map');
+        }
     }
 
     /**
@@ -152,5 +163,39 @@ class BoatController extends Controller
         }
 
         return $this->redirectToRoute('boat_index');
+    }
+
+    /**
+     * @param $d
+     * Move the boat on one direction
+     * @Route("/move/{d}")
+     */
+    public function moveDirection($d){
+
+        $boat = $this->getBoat();
+
+        // Récupération des coordonnées actuelles
+        $actualX=$boat->getCoordX();
+        $actualY=$boat->getCoordY();
+
+        switch ($d) {
+            case 'N':
+                $newPosY = $actualY-1;
+                $this->moveBoatAction($actualX, $newPosY);
+                break;
+            case 'S':
+                $newPosY = $actualY+1;
+                $this->moveBoatAction($actualX, $newPosY);
+                break;
+            case 'E':
+                $newPosX = $actualX+1;
+                $this->moveBoatAction($newPosX, $actualY);
+                break;
+            case 'W':
+                $newPosX = $actualX-1;
+                $this->moveBoatAction($newPosX, $actualY);
+                break;
+        }
+        return $this->redirectToRoute('map');
     }
 }

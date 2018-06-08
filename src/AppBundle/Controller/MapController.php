@@ -9,6 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use AppBundle\Services\MapManager;
 
 class MapController extends Controller
 {
@@ -32,5 +33,22 @@ class MapController extends Controller
             'map'  => $map ?? [],
             'boat' => $boat,
         ]);
+
+    }
+
+    /**
+     * @Route("/start", name="start")
+     */
+    public function startAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $boat = $this->getBoat();
+
+        $boat->setCoordX('0');
+        $boat->setCoordY('0');
+
+        $em->flush();
+
+        return $this->redirectToRoute('map');
     }
 }

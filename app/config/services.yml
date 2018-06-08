@@ -33,3 +33,7 @@ services:
     # AppBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
+
+    MapManager:
+        class: AppBundle\Services\MapManager
+        arguments: ["@doctrine.orm.entity_manager"]

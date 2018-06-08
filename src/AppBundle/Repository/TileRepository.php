@@ -10,5 +10,11 @@ namespace AppBundle\Repository;
  */
 class TileRepository extends \Doctrine\ORM\EntityRepository
 {
-
+    public function findAllIslands() {
+        return $this->getEntityManager()
+            ->createQuery(
+                "SELECT t.id FROM AppBundle:Tile t WHERE t.type ='island'"
+            )
+            ->getResult();
+    }
 }
