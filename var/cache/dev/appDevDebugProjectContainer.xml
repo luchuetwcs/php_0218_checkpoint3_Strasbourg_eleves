@@ -100,9 +100,9 @@
     <parameter key="kernel.container_class">appDevDebugProjectContainer</parameter>
     <parameter key="container.autowiring.strict_mode">true</parameter>
     <parameter key="container.dumper.inline_class_loader">true</parameter>
-    <parameter key="database_host">root</parameter>
+    <parameter key="database_host">127.0.0.1</parameter>
     <parameter key="database_port">null</parameter>
-    <parameter key="database_name">checkpoint3</parameter>
+    <parameter key="database_name">checkpoint_3</parameter>
     <parameter key="database_user">root</parameter>
     <parameter key="database_password">adamant27</parameter>
     <parameter key="mailer_transport">smtp</parameter>
@@ -3154,9 +3154,9 @@
     <service id="doctrine.dbal.default_connection" class="Doctrine\DBAL\Connection" public="true">
       <argument type="collection">
         <argument key="driver">pdo_mysql</argument>
-        <argument key="host">root</argument>
+        <argument key="host">127.0.0.1</argument>
         <argument key="port">null</argument>
-        <argument key="dbname">checkpoint3</argument>
+        <argument key="dbname">checkpoint_3</argument>
         <argument key="user">root</argument>
         <argument key="password">adamant27</argument>
         <argument key="charset">UTF8</argument>
