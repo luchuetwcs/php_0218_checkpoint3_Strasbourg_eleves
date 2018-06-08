@@ -8,6 +8,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
+use App\Service\mapManager;
+
 
 /**
  * Boat controller.
@@ -29,6 +31,8 @@ class BoatController extends Controller
 
         $boat->setCoordX($x);
         $boat->setCoordY($y);
+
+        $checkBoat = new(mapManager $mapManager)
 
         $em->flush();
 
