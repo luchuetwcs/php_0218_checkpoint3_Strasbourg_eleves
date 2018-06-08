@@ -2,11 +2,227 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94e9fd45-ee9c-4d7c-90b8-ee099fe496e9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/app/config/parameters.yml" afterPath="$PROJECT_DIR$/app/config/parameters.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Service/MapManager.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/MapController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/MapController.php" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng.legacy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/appDevDebugProjectContainer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getAnnotations_CacheService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getAnnotations_CacheWarmerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getArgumentResolver_DefaultService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getArgumentResolver_RequestAttributeService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getArgumentResolver_RequestService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getArgumentResolver_ServiceService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getArgumentResolver_SessionService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getArgumentResolver_VariadicService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getBoatControllerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getBoatTypeService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getCacheClearerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getCacheWarmerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getCache_DefaultClearerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getCache_GlobalClearerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getCache_SystemClearerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConfig_Resource_SelfCheckingResourceCheckerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConsole_CommandLoaderService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConsole_Command_AboutService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConsole_Command_AssetsInstallService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConsole_Command_CacheClearService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConsole_Command_CachePoolClearService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConsole_Command_CachePoolPruneService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConsole_Command_CacheWarmupService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConsole_Command_ConfigDebugService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConsole_Command_ConfigDumpReferenceService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConsole_Command_ContainerDebugService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConsole_Command_DebugAutowiringService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConsole_Command_EventDispatcherDebugService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConsole_Command_FormDebugService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConsole_Command_RouterDebugService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConsole_Command_RouterMatchService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConsole_Command_XliffLintService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConsole_Command_YamlLintService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getConsole_ErrorListenerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDebug_DumpListenerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDebug_FileLinkFormatter_UrlFormatService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDefaultControllerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDependencyInjection_Config_ContainerParametersResourceCheckerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDeprecated_Form_RegistryService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDeprecated_Form_Registry_CsrfService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrineCache_ContainsCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrineCache_DeleteCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrineCache_FlushCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrineCache_Providers_Doctrine_Orm_DefaultMetadataCacheService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrineCache_Providers_Doctrine_Orm_DefaultQueryCacheService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrineCache_Providers_Doctrine_Orm_DefaultResultCacheService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrineCache_StatsCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_CacheClearMetadataCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_CacheClearQueryCacheCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_CacheClearResultCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_CacheCollectionRegionCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_ClearEntityRegionCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_ClearQueryRegionCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_DatabaseCreateCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_DatabaseDropCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_DatabaseImportCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_Dbal_ConnectionFactoryService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_Dbal_DefaultConnectionService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_EnsureProductionSettingsCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_FixturesLoadCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_GenerateEntitiesCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_MappingConvertCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_MappingImportCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_MappingInfoCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_Orm_DefaultEntityListenerResolverService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_Orm_DefaultEntityManagerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_Orm_DefaultEntityManager_PropertyInfoExtractorService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_Orm_DefaultListeners_AttachEntityListenersService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_Orm_DefaultManagerConfiguratorService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_Orm_ProxyCacheWarmerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_Orm_Validator_UniqueService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_QueryDqlCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_QuerySqlCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_SchemaCreateCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_SchemaDropCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_SchemaUpdateCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getDoctrine_SchemaValidateCommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getFileLocatorService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getFilesystemService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_FactoryService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_RegistryService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_ResolvedTypeFactoryService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_ServerParamsService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_TypeExtension_CsrfService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_TypeExtension_Form_DataCollectorService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_TypeExtension_Form_HttpFoundationService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_TypeExtension_Form_ValidatorService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_TypeExtension_Repeated_ValidatorService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_TypeExtension_Submit_ValidatorService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_TypeExtension_Upload_ValidatorService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_TypeGuesser_DoctrineService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_TypeGuesser_ValidatorService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_BirthdayService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_ButtonService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_CheckboxService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_ChoiceService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_CollectionService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_CountryService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_CurrencyService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_DateService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_DatetimeService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_EmailService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_EntityService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_FileService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_FormService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_HiddenService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_IntegerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_LanguageService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_LocaleService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_MoneyService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_NumberService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_PasswordService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_PercentService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_RadioService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_RangeService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_RepeatedService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_ResetService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_SearchService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_SubmitService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_TextService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_TextareaService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_TimeService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_TimezoneService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getForm_Type_UrlService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getFragment_HandlerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getFragment_Renderer_HincludeService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getFragment_Renderer_InlineService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getHttpExceptionListenerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getKernel_ClassCache_CacheWarmerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getMapControllerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getMonolog_Handler_NullInternalService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getMonolog_Logger_ConsoleService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getMonolog_Logger_DoctrineService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getMonolog_Logger_SecurityService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getPropertyAccessorService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getRedirectControllerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getRouter_CacheWarmerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getRouting_LoaderService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_AccessListenerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_AccessMapService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_Access_AuthenticatedVoterService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_Access_ExpressionVoterService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_Access_SimpleRoleVoterService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_AuthenticationUtilsService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_Authentication_GuardHandlerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_Authentication_Listener_Anonymous_MainService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_Authentication_Provider_Anonymous_MainService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_ChannelListenerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_Command_UserPasswordEncoderService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_ContextListener_0Service.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_Csrf_TokenManagerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_EncoderFactoryService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_Firewall_Map_Context_DevService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_Firewall_Map_Context_MainService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_PasswordEncoderService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_RequestMatcher_Zfhj2lwService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_UserValueResolverService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_User_Provider_Concrete_InMemoryService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSecurity_Validator_UserPasswordService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSensioDistribution_SecurityCheckerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSensioDistribution_SecurityChecker_CommandService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getServicesResetterService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSessionService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSession_HandlerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSession_Storage_FilesystemService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSession_Storage_MetadataBagService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSession_Storage_NativeService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSession_Storage_PhpBridgeService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSwiftmailer_EmailSender_ListenerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSwiftmailer_Mailer_DefaultService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSwiftmailer_Mailer_Default_Plugin_MessageloggerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSwiftmailer_Mailer_Default_SpoolService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSwiftmailer_Mailer_Default_TransportService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSwiftmailer_Mailer_Default_Transport_EventdispatcherService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getSwiftmailer_Mailer_Default_Transport_RealService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getTemplateControllerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getTemplating_Helper_LogoutUrlService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getTemplating_Helper_SecurityService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getTileControllerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getTileTypeService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getTwig_CacheWarmerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getTwig_Command_DebugService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getTwig_Command_LintService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getTwig_Controller_ExceptionService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getTwig_Controller_PreviewErrorService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getTwig_ExceptionListenerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getTwig_Form_RendererService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getTwig_Runtime_HttpkernelService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getTwig_TemplateCacheWarmerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getTwig_Translation_ExtractorService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getValidator_EmailService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getValidator_ExpressionService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getValidator_Mapping_CacheWarmerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getVarDumper_CliDumperService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getWebProfiler_Controller_ExceptionService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getWebProfiler_Controller_ProfilerService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getWebProfiler_Controller_RouterService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getWebServer_Command_ServerLogService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getWebServer_Command_ServerRunService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getWebServer_Command_ServerStartService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getWebServer_Command_ServerStatusService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/getWebServer_Command_ServerStopService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerXjubdng/removed-ids.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" />
       <change beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml.meta" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerCompiler.log" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerCompiler.log" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/nfmJ9-8Qc2/8/4/r96SjYYQQ+ySOP0OOEUa" afterPath="$PROJECT_DIR$/var/cache/dev/pools/nfmJ9-8Qc2/8/4/r96SjYYQQ+ySOP0OOEUa" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/nfmJ9-8Qc2/K/4/U5LJQItBIBZ2wMi1x0WP" afterPath="$PROJECT_DIR$/var/cache/dev/pools/nfmJ9-8Qc2/K/4/U5LJQItBIBZ2wMi1x0WP" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/nfmJ9-8Qc2/L/4/XzC8c-RtL5uAYNvz4PHe" afterPath="$PROJECT_DIR$/var/cache/dev/pools/nfmJ9-8Qc2/L/4/XzC8c-RtL5uAYNvz4PHe" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/nfmJ9-8Qc2/L/D/KPBK4l0EVeDAm9ejKPu-" afterPath="$PROJECT_DIR$/var/cache/dev/pools/nfmJ9-8Qc2/L/D/KPBK4l0EVeDAm9ejKPu-" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/nfmJ9-8Qc2/P/H/B0Xa2pa5y8sYD-g5CAyR" afterPath="$PROJECT_DIR$/var/cache/dev/pools/nfmJ9-8Qc2/P/H/B0Xa2pa5y8sYD-g5CAyR" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/nfmJ9-8Qc2/R/L/+Tx3GfUmpMMsXTTGj-qg" afterPath="$PROJECT_DIR$/var/cache/dev/pools/nfmJ9-8Qc2/R/L/+Tx3GfUmpMMsXTTGj-qg" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
       <change beforePath="$PROJECT_DIR$/var/logs/dev.log" afterPath="$PROJECT_DIR$/var/logs/dev.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,18 +235,104 @@
   <component name="ComposerSettings" doNotAsk="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <file leaf-file-name="BoatController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/BoatController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="-345">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BoatController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/BoatController.php">
+      <file leaf-file-name="MapController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MapController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+              <folding>
+                <element signature="e#40#66#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tile.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Tile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="102" column="7" lean-forward="true" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoatTrait.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Traits/BoatTrait.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TileController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TileController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-626">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/map/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-438">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/MapManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="e#6#86#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+              <folding>
+                <element signature="e#40#73#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-55">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TileRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/TileRepository.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -48,6 +350,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/MapController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Service/MapManager.php" />
       </list>
     </option>
   </component>
@@ -57,12 +362,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="711" />
-    <option name="y" value="85" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="24" />
     <option name="width" value="815" />
-    <option name="height" value="713" />
+    <option name="height" value="813" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -109,6 +416,41 @@
               <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="php_0218_checkpoint3_Strasbourg_eleves" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php_0218_checkpoint3_Strasbourg_eleves" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DataFixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="php_0218_checkpoint3_Strasbourg_eleves" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php_0218_checkpoint3_Strasbourg_eleves" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="php_0218_checkpoint3_Strasbourg_eleves" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php_0218_checkpoint3_Strasbourg_eleves" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Repository" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="php_0218_checkpoint3_Strasbourg_eleves" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php_0218_checkpoint3_Strasbourg_eleves" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="php_0218_checkpoint3_Strasbourg_eleves" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php_0218_checkpoint3_Strasbourg_eleves" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Traits" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -120,7 +462,7 @@
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/flyaround" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -147,33 +489,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528442991243</updated>
-      <workItem from="1528442995791" duration="1152000" />
+      <workItem from="1528442995791" duration="8133000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1152000" />
+    <option name="totallyTimeSpent" value="8133000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="711" y="85" width="815" height="713" extended-state="0" />
+    <frame x="0" y="-4" width="1600" height="841" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4707412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17953669" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40068492" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -199,9 +541,103 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/BoatController.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Persistence/ManagerRegistry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Persistence/ObjectManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="128" column="20" lean-forward="false" selection-start-line="128" selection-start-column="20" selection-end-line="128" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/TileRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/map/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-438">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-626">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Traits/BoatTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Tile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="102" column="7" lean-forward="true" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MapController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding>
+            <element signature="e#40#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/MapManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+          <folding>
+            <element signature="e#40#73#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

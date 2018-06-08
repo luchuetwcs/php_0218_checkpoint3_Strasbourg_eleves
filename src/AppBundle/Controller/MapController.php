@@ -28,9 +28,9 @@ class MapController extends Controller
 
         $boat = $this->getBoat();
 
-        return $this->render('map/index.html.twig', [
+        return $this->render('map/index.html.twig',array(
             'map'  => $map ?? [],
             'boat' => $boat,
-        ]);
+        ));
     }
 }
