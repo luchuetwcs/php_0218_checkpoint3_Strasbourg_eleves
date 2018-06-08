@@ -8,6 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
+use AppBundle\Services\MapManager;
 
 /**
  * Boat controller.
@@ -22,7 +23,7 @@ class BoatController extends Controller
      * Move the boat to coord x,y
      * @Route("/move/{x}/{y}", name="moveBoat", requirements={"x"="\d+", "y"="\d+"}))
      */
-    public function moveBoatAction(int $x, int $y)
+    public function moveBoatAction(int $x, int $y, MapManager $mapManager)
     {
         $em = $this->getDoctrine()->getManager();
         $boat = $this->getBoat();
@@ -31,6 +32,10 @@ class BoatController extends Controller
         $boat->setCoordY($y);
 
         $em->flush();
+        if ($mapManager->tileExists($x,$y)){
+            $this->addFlash('error','wrong way man!');
+        }
+
 
         return $this->redirectToRoute('map');
     }

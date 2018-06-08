@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+Supprimerait .gitignore
+Supprimerait .idea/misc.xml
+Supprimerait .idea/modules.xml
+Supprimerait .idea/php_0218_checkpoint3_Strasbourg_eleves.iml
+Supprimerait .idea/workspace.xml
+Supprimerait app/config/parameters.yml
+Supprimerait var/bootstrap.php.cache
+Supprimerait var/cache/dev/
+Supprimerait var/logs/dev.log
+Supprimerait vendor/
