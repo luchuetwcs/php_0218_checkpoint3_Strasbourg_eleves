@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\Boat;
+use AppBundle\Services\MapManager;
 use AppBundle\Traits\BoatTrait;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -22,13 +23,18 @@ class BoatController extends Controller
      * Move the boat to coord x,y
      * @Route("/move/{x}/{y}", name="moveBoat", requirements={"x"="\d+", "y"="\d+"}))
      */
-    public function moveBoatAction(int $x, int $y)
+    public function moveBoatAction(int $x, int $y, MapManager $mapManager)
     {
         $em = $this->getDoctrine()->getManager();
         $boat = $this->getBoat();
+        if ($mapManager->tileExist($x,$y)){
+            $boat->setCoordX($x);
+            $boat->setCoordY($y);
+        }
+        else{
+            $this->addFlash('error', 'Are you crazy Mate!, This is uncharted sea, the Kraken might roam there.');
+        }
 
-        $boat->setCoordX($x);
-        $boat->setCoordY($y);
 
         $em->flush();
 
