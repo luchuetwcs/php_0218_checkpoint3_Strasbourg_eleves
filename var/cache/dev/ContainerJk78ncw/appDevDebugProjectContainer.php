@@ -1,6 +1,6 @@
 <?php
 
-namespace ContainerXjubdng;
+namespace ContainerJk78ncw;
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -41,6 +41,7 @@ class appDevDebugProjectContainer extends Container
             'appbundle\\controller\\tilecontroller' => 'AppBundle\\Controller\\TileController',
             'appbundle\\form\\boattype' => 'AppBundle\\Form\\BoatType',
             'appbundle\\form\\tiletype' => 'AppBundle\\Form\\TileType',
+            'appbundle\\service\\mapmanager' => 'AppBundle\\Service\\MapManager',
             'symfony\\bundle\\frameworkbundle\\controller\\redirectcontroller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\RedirectController',
             'symfony\\bundle\\frameworkbundle\\controller\\templatecontroller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController',
         );
@@ -135,6 +136,7 @@ class appDevDebugProjectContainer extends Container
             'AppBundle\\Controller\\TileController' => 'getTileControllerService.php',
             'AppBundle\\Form\\BoatType' => 'getBoatTypeService.php',
             'AppBundle\\Form\\TileType' => 'getTileTypeService.php',
+            'AppBundle\\Service\\MapManager' => 'getMapManagerService.php',
             'Symfony\\Bundle\\FrameworkBundle\\Controller\\RedirectController' => 'getRedirectControllerService.php',
             'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController' => 'getTemplateControllerService.php',
             'annotations.cache' => 'getAnnotations_CacheService.php',
@@ -293,6 +295,7 @@ class appDevDebugProjectContainer extends Container
             'security.validator.user_password' => 'getSecurity_Validator_UserPasswordService.php',
             'sensio_distribution.security_checker' => 'getSensioDistribution_SecurityCheckerService.php',
             'sensio_distribution.security_checker.command' => 'getSensioDistribution_SecurityChecker_CommandService.php',
+            'service_locator.9igb54q' => 'getServiceLocator_9igb54qService.php',
             'services_resetter' => 'getServicesResetterService.php',
             'session' => 'getSessionService.php',
             'session.handler' => 'getSession_HandlerService.php',
@@ -341,6 +344,7 @@ class appDevDebugProjectContainer extends Container
             'swiftmailer.transport.real' => true,
             'AppBundle\\Form\\BoatType' => true,
             'AppBundle\\Form\\TileType' => true,
+            'AppBundle\\Service\\MapManager' => true,
             'annotation_reader' => true,
             'annotations.cache' => true,
             'annotations.cache_warmer' => true,
@@ -507,6 +511,7 @@ class appDevDebugProjectContainer extends Container
             'sensio_framework_extra.converter.manager' => true,
             'sensio_framework_extra.security.listener' => true,
             'sensio_framework_extra.view.listener' => true,
+            'service_locator.9igb54q' => true,
             'session.handler' => true,
             'session.save_listener' => true,
             'session.storage.filesystem' => true,
@@ -1304,9 +1309,6 @@ class appDevDebugProjectContainer extends Container
             return ${($_ = isset($this->services['data_collector.request']) ? $this->services['data_collector.request'] : $this->services['data_collector.request'] = new \Symfony\Bundle\FrameworkBundle\DataCollector\RequestDataCollector()) && false ?: '_'};
         }, 1 => 'onKernelResponse'), 0);
         $instance->addListener('kernel.request', array(0 => function () {
-            return ${($_ = isset($this->services['debug.debug_handlers_listener']) ? $this->services['debug.debug_handlers_listener'] : $this->getDebug_DebugHandlersListenerService()) && false ?: '_'};
-        }, 1 => 'configure'), 2048);
-        $instance->addListener('console.command', array(0 => function () {
             return ${($_ = isset($this->services['debug.debug_handlers_listener']) ? $this->services['debug.debug_handlers_listener'] : $this->getDebug_DebugHandlersListenerService()) && false ?: '_'};
         }, 1 => 'configure'), 2048);
         $instance->addListener('kernel.request', array(0 => function () {
@@ -2185,9 +2187,9 @@ class appDevDebugProjectContainer extends Container
             'kernel.container_class' => 'appDevDebugProjectContainer',
             'container.autowiring.strict_mode' => true,
             'container.dumper.inline_class_loader' => true,
-            'database_host' => 'root',
+            'database_host' => '127.0.0.1',
             'database_port' => NULL,
-            'database_name' => 'checkpoint3',
+            'database_name' => 'checkpoint_3',
             'database_user' => 'root',
             'database_password' => 'adamant27',
             'mailer_transport' => 'smtp',
