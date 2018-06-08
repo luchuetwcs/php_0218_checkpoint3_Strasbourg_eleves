@@ -4,10 +4,12 @@ namespace AppBundle\Controller;
 
 use AppBundle\Entity\Boat;
 use AppBundle\Traits\BoatTrait;
+use AppBundle\Service\MapManager;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Session\Session;
 
 /**
  * Boat controller.
@@ -22,7 +24,7 @@ class BoatController extends Controller
      * Move the boat to coord x,y
      * @Route("/move/{x}/{y}", name="moveBoat", requirements={"x"="\d+", "y"="\d+"}))
      */
-    public function moveBoatAction(int $x, int $y)
+    public function moveBoatAction(int $x, int $y,Request $request ,MapManager $mapManager)
     {
         $em = $this->getDoctrine()->getManager();
         $boat = $this->getBoat();
@@ -30,10 +32,57 @@ class BoatController extends Controller
         $boat->setCoordX($x);
         $boat->setCoordY($y);
 
-        $em->flush();
+
+        $res = $mapManager->tileExists($x, $y);
+        if($res == false){
+            $boat->getCoordX(0);
+            $boat->getCoordY(0);
+            $request->getSession()->getFlashBag()->add('warning', 'these coordinates not exists');
+        }else{
+            $request->getSession()->getFlashBag()->add('success', 'these coordinates exists');
+            $boat->setCoordX($x);
+            $boat->setCoordY($y);
+            $em->flush();
+        }
+
 
         return $this->redirectToRoute('map');
     }
+
+    /**
+     * Move the boat according to direction
+     * @Route("/move/{direction}", name="moveDirection", requirements={"dir"="[NSEO]"}))
+     */
+
+    public function moveDirection($direction){
+        $em = $this->getDoctrine()->getManager();
+        $boat = $this->getBoat();
+
+        if($direction==='N'){
+          $x =  $boat->getCoordX();
+          $y = $boat->getCoordY()-1;
+
+        }
+        elseif($direction==='S'){
+            $x = $boat->getCoordX();
+            $y = $boat->getCoordY()+1;
+
+        }
+        elseif($direction==='E') {
+            $x = $boat->getCoordX()+1;
+            $y = $boat->getCoordY();
+        }
+        elseif($direction==='O'){
+            $x = $boat->getCoordX()-1;
+            $y = $boat->getCoordY();
+
+        }
+
+        $em->flush();
+        return $this->redirectToRoute('map');
+
+    }
+
 
     /**
      * Lists all boat entities.
