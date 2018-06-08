@@ -40,6 +40,45 @@ class BoatController extends Controller
 
         return $this->redirectToRoute('map');
     }
+    /**
+     * Move the boat according to direction
+     * @Route("/move/{dir}", name="moveDirection", requirements={"dir"="[NSEW]"}))
+     */
+    public function moveDirection($dir, MapManager $mapManager){
+        $em = $this->getDoctrine()->getManager();
+        $boat = $this->getBoat();
+        switch ($dir){
+            case 'N':
+                $x=$boat->getCoordX();
+                $y=$boat->getCoordY()-1;
+                break;
+            case 'S':
+                $x=$boat->getCoordX();
+                $y=$boat->getCoordY()+1;
+                break;
+            case 'E':
+                $x=$boat->getCoordX()+1;
+                $y=$boat->getCoordY();
+                break;
+            case 'W':
+                $x=$boat->getCoordX()-1;
+                $y=$boat->getCoordY();
+                break;
+        }
+        if ($mapManager->tileExist($x,$y)){
+
+            $boat->setCoordX($x);
+            $boat->setCoordY($y);
+        }
+        else{
+            $this->addFlash('error', 'Are you crazy Mate!, This is uncharted sea, the Kraken might roam there.');
+        }
+
+
+        $em->flush();
+
+        return $this->redirectToRoute('map');
+    }
 
     /**
      * Lists all boat entities.
